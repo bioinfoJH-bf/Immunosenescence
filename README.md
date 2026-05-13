@@ -3,12 +3,12 @@
 ![Language](https://img.shields.io/badge/Language-R-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-## 📌 Project Overview
+## Project Overview
 This repository contains the core analytical code and pipelines for the study of **pan-cancer myeloid immunosenescence**. The study explores how the tumor microenvironment (TME) hijacks physiological myeloid senescence programs to drive immunosuppression and develops a robust prognostic stratification model (MSAG.SIG) using machine learning algorithms.
 
 The analytical framework integrates bulk RNA-seq (GTEx/TCGA) and multi-cohort single-cell RNA sequencing (scRNA-seq) data to construct high-resolution myeloid atlases, cellular communication networks, and clinical prognostic signatures.
 
-## 📂 Repository Structure
+## Repository Structure
 The analysis scripts are organized sequentially corresponding to the results sections of our manuscript. All core scripts are located in the `Code/` directory:
 
 * `Code/`
@@ -19,11 +19,11 @@ The analysis scripts are organized sequentially corresponding to the results sec
   * [`Result5.R`](Code/Result5.R) - **MSAG Subtyping & Clinical Evaluation:** Translates scRNA-seq signatures to bulk TCGA cohorts. Conducts unsupervised consensus clustering based on the Myeloid Senescence-Associated Gene signature (MSAG), evaluating clinical outcomes (Kaplan-Meier survival) and immune infiltration landscapes (`CIBERSORT` & `ESTIMATE`).
   * [`Result6.R`](Code/Result6.R) - **Machine Learning Prognostic Modeling:** Develops and validates a clinical prognostic signature utilizing the `Mime1` auto-ML framework. Integrates up to 117 machine learning algorithm combinations (e.g., StepCox, RSF, GBM), calculating C-index and Time-ROC across independent validation cohorts.
 
-## 💻 Prerequisites & Dependencies
+## Prerequisites & Dependencies
 The scripts are written entirely in **R**. The following major R and Bioconductor packages are required to execute the pipeline:
 
 **Single-Cell & Spatial Analysis:**
-* `Seurat` (v4.x)
+* `Seurat` (v4)
 * `harmony`
 * `CellChat`
 * `infercnv`
@@ -42,7 +42,7 @@ The scripts are written entirely in **R**. The following major R and Bioconducto
 **Visualization:**
 * `ggplot2`, `ggpubr`, `ComplexHeatmap`, `fmsb` (Radar plots), `ggvenn`
 
-## 🚀 Usage
+## Usage
 1. Clone this repository to your local machine:
    ```bash
    git clone [https://github.com/YourUsername/YourRepository.git](https://github.com/YourUsername/YourRepository.git)
