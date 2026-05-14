@@ -36,7 +36,7 @@ The scripts are written entirely in **R**. The following major R and Bioconducto
 * `survival` / `survminer` / `timeROC`
 * `ConsensusClusterPlus`
 * `Mime1`
-* `randomForestSRC` (Note: version 3.3.1 is highly recommended for `var.select` compatibility)
+* `randomForestSRC`
 * `CoxBoost` / `fastAdaboost` / `gbm`
 
 **Visualization:**
