@@ -40,7 +40,7 @@ The scripts are written entirely in **R**. The following major R and Bioconducto
 * `CoxBoost` / `fastAdaboost` / `gbm`
 
 **Visualization:**
-* `ggplot2`, `ggpubr`, `ComplexHeatmap`, `fmsb` (Radar plots), `ggvenn`
+* `ggplot2`, `ggpubr`, `ComplexHeatmap`, `fmsb`, `ggvenn`
 
 ## Usage
 1. Clone this repository to your local machine:
